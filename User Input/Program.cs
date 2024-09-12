@@ -1,19 +1,29 @@
-﻿//test with string
-
+//part 1
 using System;
+using System.Runtime.ExceptionServices;
 
-string userName;
-Console.WriteLine("enter you name");
-userName = Console.ReadLine();
-Console.WriteLine("so your name is " +  userName);
+string name;
+int age;
+double money;
+Console.WriteLine("Hello. What is your name?");
+name = Console.ReadLine();
+Console.WriteLine("hi, " + name + "! How old are you?");
+int.TryParse(Console.ReadLine(), out age);
+Console.WriteLine("You sure don't look " + age + " How much do you make " + name + "?");
+double.TryParse(Console.ReadLine(), out money);
+Console.WriteLine(money.ToString("C") + "! Wow that's a alot of money.");
+Console.WriteLine("press enter to move to part 2");
 Console.ReadLine();
+Console.Clear();
 
-//test with numbers
+//part 2
+string fname, lname, login;
+int grade, id;
+double average;
+Console.WriteLine("Oi fill out da form for a chance to win 10,000$ dollars.");
+Console.WriteLine("First name: "); fname = Console.ReadLine();
+Console.WriteLine("Last name: "); lname = Console.ReadLine();
+Console.WriteLine("Grade(9-12): "); fname = Console.ReadLine();
 
-int aGe;
-Console.WriteLine("how old are you?");
-aGe = Console.ReadLine();
-Console.WriteLine(int32.TryParse(Console.ReadLine(), out aGe));
-Console.WriteLine("AYO WHAT THE " + aGe + " YOU AINT OLD ENOUGH YET FOOL");
+
 Console.ReadLine();
-
