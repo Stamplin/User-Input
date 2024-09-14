@@ -69,6 +69,35 @@ Console.ReadLine();
 Console.Clear();
 
 //part 5
-
-
+string item1, item2;
+double price1, price2, total, discount, tax, subtotal;
+Console.WriteLine("Hello! Please enter the name and price of your items.");
+Console.WriteLine("Please name your first item:");
+item1 = Console.ReadLine();
+Console.WriteLine("Enter the price of your first item:");
+double.TryParse(Console.ReadLine(), out price1);
+Console.WriteLine("Please enter the name of your second item:");
+item2 = Console.ReadLine();
+Console.WriteLine("Enter the price of your second item");
+double.TryParse(Console.ReadLine(), out price2);
+Console.WriteLine("Press \"enter\" to proceed:");
+Console.ReadLine();
+Console.Clear();
+//output
+Console.WriteLine("Sales Receipt");
+Console.WriteLine("Item 1: " + item1);
+Console.WriteLine("Price: $" + price1);
+Console.WriteLine("Item 2: " + item2);
+Console.WriteLine("Price: $" + price2);
+Console.WriteLine("==========================");
+total = price1 + price2;
+Console.WriteLine("Total: $" + total);
+discount = total * 0.2;
+Console.WriteLine("Discount (20%): $" + discount);
+subtotal = total - discount;
+Console.WriteLine("Subtotal: $" + subtotal);
+tax = subtotal * 0.13;
+Console.WriteLine("Tax (13%): $" + tax);
+Console.WriteLine("==========================");
+Console.WriteLine("Total Owed: $" + (subtotal + tax));
 Console.ReadLine();
