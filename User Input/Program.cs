@@ -8,9 +8,9 @@ double money;
 Console.WriteLine("Hello. What is your name?");
 name = Console.ReadLine();
 Console.WriteLine("hi, " + name + "! How old are you?");
-int.TryParse(Console.ReadLine(), out age);
+int.TryParse(Console.ReadLine(), out age); // get age
 Console.WriteLine("You sure don't look " + age + " How much do you make " + name + "?");
-double.TryParse(Console.ReadLine(), out money);
+double.TryParse(Console.ReadLine(), out money); // get money
 Console.WriteLine(money.ToString("C") + "! Wow that's a alot of money.");
 Console.WriteLine("press enter to move to part 2");
 Console.ReadLine();
@@ -22,17 +22,17 @@ int grade, ID;
 double average;
 Console.WriteLine("Please fill out da form for a chance to win 10,000$ dollars!");
 Console.WriteLine("What is your first name? ");
-firstName = Console.ReadLine();
+firstName = Console.ReadLine(); // get first name
 Console.WriteLine("What is your last name? ");
-lastName = Console.ReadLine();
+lastName = Console.ReadLine(); // get last name
 Console.WriteLine("What grade are you in? ");
-Int32.TryParse(Console.ReadLine(), out grade);
+Int32.TryParse(Console.ReadLine(), out grade); // get grade
 Console.WriteLine("What is yout student ID? ");
-Int32.TryParse(Console.ReadLine(), out ID);
+Int32.TryParse(Console.ReadLine(), out ID); // get ID
 Console.WriteLine("what is your login?");
-login = Console.ReadLine();
-Console.WriteLine("What is your average? "); double.TryParse(Console.ReadLine(), out average);
-Console.WriteLine(); //space to seprate the two spaces
+login = Console.ReadLine(); // get login
+Console.WriteLine("What is your average? "); double.TryParse(Console.ReadLine(), out average); // get average
+Console.WriteLine(); // space to separate
 Console.WriteLine("Your information:");
 Console.WriteLine("Login:\t\t" + login);
 Console.WriteLine("ID:\t\t" + ID);
@@ -48,9 +48,9 @@ Console.Clear();
 string p3Name;
 int p3Age;
 Console.WriteLine("Hey! What is your name?");
-p3Name = Console.ReadLine();
+p3Name = Console.ReadLine(); // get name
 Console.WriteLine("How old are you?");
-Int32.TryParse(Console.ReadLine(), out p3Age);
+Int32.TryParse(Console.ReadLine(), out p3Age); // get age
 Console.WriteLine("Did you know in 5 years you will be " + (p3Age + 5) + " and 5 years ago you were " + (p3Age - 5));
 Console.WriteLine("press enter to move to part 4");
 Console.ReadLine();
@@ -73,13 +73,13 @@ string item1, item2;
 double price1, price2, total, discount, tax, subtotal;
 Console.WriteLine("Hello! Please enter the name and price of your items.");
 Console.WriteLine("Please name your first item:");
-item1 = Console.ReadLine();
+item1 = Console.ReadLine(); // get item 1 name
 Console.WriteLine("Enter the price of your first item:");
-double.TryParse(Console.ReadLine(), out price1);
+double.TryParse(Console.ReadLine(), out price1); // get price 1
 Console.WriteLine("Please enter the name of your second item:");
-item2 = Console.ReadLine();
+item2 = Console.ReadLine(); // get item 2 name
 Console.WriteLine("Enter the price of your second item");
-double.TryParse(Console.ReadLine(), out price2);
+double.TryParse(Console.ReadLine(), out price2); // get price 2
 Console.WriteLine("Press \"enter\" to proceed:");
 Console.ReadLine();
 Console.Clear();
@@ -90,14 +90,14 @@ Console.WriteLine("Price: $" + price1);
 Console.WriteLine("Item 2: " + item2);
 Console.WriteLine("Price: $" + price2);
 Console.WriteLine("==========================");
-total = price1 + price2;
+total = price1 + price2; // calculate total
 Console.WriteLine("Total: $" + total);
-discount = total * 0.2;
+discount = total * 0.2; // calculate discount
 Console.WriteLine("Discount (20%): $" + discount);
-subtotal = total - discount;
+subtotal = total - discount; // calculate subtotal
 Console.WriteLine("Subtotal: $" + subtotal);
-tax = subtotal * 0.13;
+tax = subtotal * 0.13; // calculate tax
 Console.WriteLine("Tax (13%): $" + tax);
 Console.WriteLine("==========================");
-Console.WriteLine("Total Owed: $" + (subtotal + tax));
+Console.WriteLine("Total Owed: $" + (subtotal + tax)); // final total
 Console.ReadLine();
